@@ -1,17 +1,17 @@
 import React from "react";
 import design from "../assets/bg-sidebar-desktop.svg";
-import design2 from "../assets/bg-sidebar-mobile.svg";
+// import design2 from "../assets/bg-sidebar-mobile.svg";
 import { Link } from "react-router-dom";
 export default function Sidenav() {
   return (
     <div
       style={{
-        backgroundImage: `url(${design2})`,
+        backgroundImage: `url("bg-sidebar-mobile.svg")` ,
         backgroundPosition: "center",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
       }}
-      className={`w-full md:w-[30%] lg:w-[30%] h-[30%] md:h-full lg:h-full rounded-none bg-slate-400 md:rounded-xl p-4`}>
+      className={`w-full bg-[url("../assets/bg-sidebar-mobile.svg")] md:w-[30%] lg:w-[30%] h-[30%] md:h-full lg:h-full rounded-none bg-slate-400 md:rounded-xl p-4`}>
       <div className=' text-center font-bold text-xl h-auto md:h-[10%] text-white'>
         Registration
       </div>
