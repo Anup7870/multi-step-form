@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import design from "../assets/bg-sidebar-desktop.svg";
-// import design2 from "../assets/bg-sidebar-mobile.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 export default function Sidenav() {
+  const [link,setLink]= useState(0);
+  const path = useLocation();
+  useEffect(()=>{
+    if(path.pathname==="/contact") setLink(1);
+    if(path.pathname==="/payment") setLink(2);
+    if(path.pathname==="/preview") setLink(3);
+  },[path.pathname])
   return (
     <div
       style={{

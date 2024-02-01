@@ -4,6 +4,7 @@ import { Routes,Route } from "react-router-dom";
 import Personal from "../Components/Personal";
 import Contact from "../Components/Contact";
 import Payment from "../Components/Payment";
+import Preview from "../Components/Preview";
 export default function Forms() {
   return (
     <div className='w-[100%] bg-gray-200 h-[70%] md:h-full lg:h-full relative flex flex-col items-center justify-center '>
@@ -12,7 +13,7 @@ export default function Forms() {
           <Route path="/" element={<Personal/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/payment" element={<Payment/>}/>
-          <Route path="/preview" element={<p>preview</p>}/>
+          <Route path="/preview" element={<Preview/>}/>
         </Routes>
       </form>
       <Button />
